@@ -30,7 +30,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-@RunWith(JUnit4.class)
 public class BarChartsTest {
 	private void testBarChart_RawClasses(int i) {
 		Image image = new Image("src/test/resources/TestCharts/BarCharts/Uncut/cpu.png");
@@ -49,7 +48,6 @@ public class BarChartsTest {
 		}
 	}
 
-	@Test
 	public void testBarCharts_WrappedClasses(){
 		ChartExtractor extractor=new ChartExtractor(ChartExtractor.DEFAULT_FONT);
 		BarChartConfig config=new BarChartConfig();
@@ -86,7 +84,6 @@ public class BarChartsTest {
 		assertTrue(DataMatcher.isBarChartSimilar(actualData, expectedData.get(i-1), 95));
 			}
 	}
-	@Test
 	public void testImage(){
 		ChartExtractor extractor=new ChartExtractor(ChartExtractor.DEFAULT_FONT);
 		BarChartConfig config=new BarChartConfig();
@@ -94,7 +91,6 @@ public class BarChartsTest {
 		Vector<Pair<String,Double>> actualData=extractor.getBarChartData(image, config);
 	assertEquals(actualData.get(0).getSecond(),4.0,0.1);
 	}
-	@Test 
 	public void testDistanced(){
 	Image image=new Image("src/test/resources/TestCharts/BarCharts/Uncut/host_mem_capacity.png");
 	ChartExtractor extractor=new ChartExtractor(ChartExtractor.DEFAULT_FONT);

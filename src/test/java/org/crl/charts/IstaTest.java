@@ -41,7 +41,8 @@ public class IstaTest {
 
 		System.out.println(lineChartData);
 		
-		final TimeSeriesCollection dataset = new TimeSeriesCollection();
+		//generate chart using jfreechart
+		/*final TimeSeriesCollection dataset = new TimeSeriesCollection();
         final TimeSeries  series = new TimeSeries("data", Second.class);
         
 		for (long date : lineChartData.keySet()) {
@@ -54,7 +55,7 @@ public class IstaTest {
 		RefineryUtilities.centerFrameOnScreen(demo);
 		demo.setVisible(true);
         
-        Thread.sleep(60000);
+        Thread.sleep(60000);*/
 
 	}
 	public void testBarChart() throws InterruptedException {

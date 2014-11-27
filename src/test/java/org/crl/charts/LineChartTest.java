@@ -29,9 +29,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-@RunWith(JUnit4.class)
 public class LineChartTest {
-	// @Test
 	public void testTimeStampExtraction_RawClasses() {
 		Image image = new Image("src/test/resources/TestCharts/LineCharts/Uncut/im13.png");
 		ChartCropper cropper = new ChartCropper(image);
@@ -68,7 +66,6 @@ public class LineChartTest {
 		}
 	}
 
-	@Test
 	public void testTimeStampExtraction_WrappedClasses() {
 		ChartExtractor extractor = new ChartExtractor("DejaVMUni");
 		Image image = new Image(
